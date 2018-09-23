@@ -196,7 +196,6 @@
 		0B172C011BE3C8EA006ACA0F /* GroovTubeAppIcon114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B172BF51BE3C8EA006ACA0F /* GroovTubeAppIcon114x114.png */; };
 		0B172C021BE3C8EA006ACA0F /* GroovTubeAppIcon120x120.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B172BF61BE3C8EA006ACA0F /* GroovTubeAppIcon120x120.png */; };
 		0B172C031BE3C8EA006ACA0F /* GroovTubeAppIcon144x144.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B172BF71BE3C8EA006ACA0F /* GroovTubeAppIcon144x144.png */; };
-		0B172C041BE3C8EA006ACA0F /* GroovTubeAppIcon152x152.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B172BF81BE3C8EA006ACA0F /* GroovTubeAppIcon152x152.png */; };
 		0B172C051BE3C8EA006ACA0F /* GroovTubeAppIcon29x29.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B172BF91BE3C8EA006ACA0F /* GroovTubeAppIcon29x29.png */; };
 		0B172C061BE3C8EA006ACA0F /* GroovTubeAppIcon40x40.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B172BFA1BE3C8EA006ACA0F /* GroovTubeAppIcon40x40.png */; };
 		0B172C071BE3C8EA006ACA0F /* GroovTubeAppIcon50x50.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B172BFB1BE3C8EA006ACA0F /* GroovTubeAppIcon50x50.png */; };
@@ -1239,6 +1238,7 @@
 				TargetAttributes = {
 					BCB5E7E714E605A900701302 = {
 						DevelopmentTeam = 7HMHYHNLFC;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -1264,7 +1264,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B172C041BE3C8EA006ACA0F /* GroovTubeAppIcon152x152.png in Resources */,
 				BCB5E7F714E605A900701302 /* InfoPlist.strings in Resources */,
 				0B3477791BBED0D7003E3BDB /* giraffe-614141_1280.jpg in Resources */,
 				BCB5E86314E6F05A00701302 /* WID-small.jpg in Resources */,
@@ -1602,6 +1601,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Ruud van der Wel (WX486X8EYU)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1622,7 +1622,8 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.audiorhoon.groovtube;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "31bd65e6-59a0-47bc-830d-050aa4753299";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1635,7 +1636,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Ruud van der Wel (7HMHYHNLFC)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1656,7 +1658,8 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.audiorhoon.groovtube;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "31bd65e6-59a0-47bc-830d-050aa4753299";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};

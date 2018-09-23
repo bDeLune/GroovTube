@@ -1,11 +1,3 @@
-//
-//  SecondViewController.m
-//  GroovTube
-//
-//  Created by Culann Mac Cabe on 21/02/2013.
-//  Copyright (c) 2013 Culann Mac Cabe. All rights reserved.
-//
-
 #import "SecondViewController.h"
 
 @interface SecondViewController ()
@@ -22,7 +14,7 @@
         self.tabBarItem.image = [UIImage imageNamed:@"second"];
         
         arrayA=[NSMutableArray arrayWithObjects:@"Small",@"Normal",@"Big", nil];
-       arrayB=[NSMutableArray arrayWithObjects:@"Low",@"Normal",@"High",@"Very High", nil];
+        arrayB=[NSMutableArray arrayWithObjects:@"Low",@"Normal",@"High",@"Very High", nil];
 
         arrayC=[NSMutableArray arrayWithObjects:@"10",@"50",@"100",@"200", nil];
         

@@ -10,17 +10,13 @@
 #import "FirstViewController.h"
 @interface SecondViewController : UIViewController<UIPickerViewDataSource, UIPickerViewDelegate>
 {
-IBOutlet UIPickerView *pickerViewA;
-IBOutlet UIPickerView *pickerViewB;
-IBOutlet UIPickerView *pickerViewC;
-IBOutlet UIPickerView *filterPicker;
-IBOutlet UISlider *rateSlider;
-IBOutlet UILabel  *thresholdLabel;
-IBOutlet UISlider *thresholdSlider;
-/*
- 
- */
-
+    IBOutlet UIPickerView *pickerViewA;
+    IBOutlet UIPickerView *pickerViewB;
+    IBOutlet UIPickerView *pickerViewC;
+    IBOutlet UIPickerView *filterPicker;
+    IBOutlet UISlider *rateSlider;
+    IBOutlet UILabel  *thresholdLabel;
+    IBOutlet UISlider *thresholdSlider;
     IBOutlet UILabel   *btTresholdLabel;
     IBOutlet UILabel   *btrangeBoost;
     IBOutlet UISlider  *btThresholdSlider;
@@ -30,13 +26,9 @@ IBOutlet UISlider *thresholdSlider;
     NSMutableArray *arrayC;
     
     NSMutableArray *filterArray;
-    
-    
     id<SETTINGS_DELEGATE> __unsafe_unretained settinngsDelegate;
-
-
-
 }
+
 @property (unsafe_unretained) id<SETTINGS_DELEGATE> settinngsDelegate;
 -(IBAction)changeRate:(id)sender;
 -(IBAction)changeThreshold:(id)sender;

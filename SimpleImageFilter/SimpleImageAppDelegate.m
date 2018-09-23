@@ -24,7 +24,6 @@
 
 -(void)applicationWillResignActive:(UIApplication *)application
 {
-
     FirstViewController  *fvc=self.tabBarController.viewControllers[0];
     //[fvc background];
 }

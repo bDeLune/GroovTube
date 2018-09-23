@@ -52,7 +52,6 @@
     CGFloat midpoint = [(UISlider *)sender value];
     [(GPUImageTiltShiftFilter *)sepiaFilter setTopFocusLevel:midpoint - 0.1];
     [(GPUImageTiltShiftFilter *)sepiaFilter setBottomFocusLevel:midpoint + 0.1];
-
     [sourcePicture processImage];
 }
 

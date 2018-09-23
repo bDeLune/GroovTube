@@ -30,7 +30,6 @@
 #import <CoreMIDI/CoreMIDI.h>
 #import <AudioToolbox/AudioToolbox.h>
 #import "GPUImageTiltShiftFilter.h"
-
 #import "GPUImageContrastFilter.h"
 #import "BTLEManager.h"
 
@@ -222,10 +221,8 @@ typedef void(^RunTimer)(void);
     self.velocity=(percentOfmax)*127.0;
     isaccelerating=YES;
   //  NSLog(@"inhaleWithValue %f",percentOfmax);
-    
-    
-    
 }
+
 -(void)btleManager:(BTLEManager*)manager exhaleWithValue:(float)percentOfmax
 {
   /*  if (![self allowBreath]) {
@@ -261,6 +258,7 @@ typedef void(^RunTimer)(void);
     return YES;
     
 }
+
 - (IBAction)toggleDirection:(id)sender
 {
     
@@ -278,9 +276,6 @@ typedef void(^RunTimer)(void);
         default:
             break;
     }
-    
-   
-
 }
 
 #pragma mark -
@@ -533,6 +528,9 @@ typedef void(^RunTimer)(void);
     //if (!inputImage) {
         inputImage=[UIImage imageNamed:@"giraffe-614141_1280.jpg"];
    // }
+    
+    NSLog(@"Retrieved image");
+    NSLog(@"inputImage %@", inputImage);
        
     sourcePicture = [[GPUImagePicture alloc] initWithImage:inputImage smoothlyScaleOutput:YES];
     stillImageFilter = [self filterForIndex:0];

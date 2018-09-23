@@ -25,18 +25,13 @@
     int midiinhale;
     int midiexhale;
     int currentdirection;
-
     BOOL midiIsOn;
-    
-    
-
 }
 
 @property int midiinhale;
 @property int midiexhale;
 @property float velocity;
 @property float animationrate;
-
 @property(nonatomic,strong)IBOutlet UISlider  *testSlider;
 -(IBAction)sliderchanged:(id)sender;
 @property BOOL midiIsOn;
